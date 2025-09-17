@@ -229,9 +229,11 @@ section {
 @media (max-width: 884px) {
   nav .logo {
     position: absolute;
-    top: 16px;
+    top: 12px;
     left: 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;   /* biraz küçülttük */
+    font-weight: 700;  
+    letter-spacing: 1px; /* harf aralığını daralttık */
   }
 
   .main-container {
@@ -263,6 +265,7 @@ section {
     height: 80%;
   }
 }
+
 
 @media (max-width: 440px) {
   .main-container .image {
