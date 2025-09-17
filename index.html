@@ -3,7 +3,8 @@
 
 <head>
 
-    <meta name=”viewport” content=”width: device-width, initial-scale=1.0″>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,6 +137,25 @@ Team 10906</span>
         AOS.init({ offset: 0, });
     </script>
     <script src="./js/script.js"></script>
+
+<script>
+  function hamburg() {
+    document.querySelector(".dropdown").style.transform = "translateY(0)";
+  }
+
+  function cancel() {
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+  }
+
+  // Linke tıklanınca menü kapansın
+  document.querySelectorAll(".dropdown .links a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    });
+  });
+</script>
+
+
 
 </body>
 </html>
