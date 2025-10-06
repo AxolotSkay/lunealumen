@@ -118,16 +118,56 @@
       background-color: rgb(89, 35, 119);
     }
 
-    @media (max-width: 884px) {
+    @media (max-width: 700px) {
       nav .logo {
         position: absolute;
         top: 16px;
         left: 15px;
-        font-size: 1.5rem;
-      }
+        font-size: 1.5rem;}
+      
       .nav-container .links { display: none; }
       .hamburg, .cancel { display: block; }
+
     }
+
+  @media (max-width: 700px) {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .category-card {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+
+  .blog-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .blog-header {
+    text-align: center;
+  }
+}
 
     
 
